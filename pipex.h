@@ -34,6 +34,5 @@ char	*find_path(char *cmd, char **envp);
 char	**ft_split(char *str, char sep);
 char	*ft_strjoin(char *str1, char *str2);
 int		ft_strncmp(char *str1, char *str2, int length);
-void	ft_strlcpy(char *dst, char *src, int size);
 
 #endif
