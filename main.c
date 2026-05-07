@@ -16,16 +16,10 @@ static void	open_files(t_pipex *pipex, char **argv)
 {
 	pipex->infile = open(argv[1], O_RDONLY);
 	if (pipex->infile == -1)
-	{
 		perror(argv[1]);
-		exit(1);
-	}
 	pipex->outfile = open(argv[4], O_WRONLY | O_CREAT | O_TRUNC, 0644);
 	if (pipex->outfile == -1)
-	{
 		perror(argv[4]);
-		exit(1);
-	}
 }
 
 static void	create_pipe(t_pipex *pipex)
