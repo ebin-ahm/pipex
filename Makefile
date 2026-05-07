@@ -15,7 +15,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 INCLUDES = -I includes
 
-SRCS = main.c pipex.c utils.c utils2.c
+SRCS = main.c pipex.c utils.c utils2.c utils3.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
